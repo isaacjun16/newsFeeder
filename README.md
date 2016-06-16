@@ -1,13 +1,13 @@
 # newsFeeder
 Codigo para un feeder de noticias
 
-Para conectar a un servidor real el codigo cambiar el script en el archivo index.html de:
+Para conectar a un servidor real el codigo cambiar el SRC del script en el archivo index.html de:
 
-<script type="text/javascript" src="js/apps/service/NewsServiceDummy.js" defer></script>
+src="js/apps/service/NewsServiceDummy.js" 
 
 A:
 
-<script type="text/javascript" src="js/apps/service/NewsService.js" defer></script>
+src="js/apps/service/NewsService.js"
 
 Y en el archivo NewService.js cambiar:
 
