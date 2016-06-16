@@ -1,0 +1,133 @@
+html, body, .wrapper{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, #394152 0%, #394d63 10%, #394d63 100%);
+}
+
+.fancyWrapper{
+    background-color: #e5e6eb;
+}
+
+.wrapper-center{
+    padding: 0;
+    margin: 0 auto;
+    left: 0;
+}
+
+.btnStore.active,
+.btnStore:active,
+.btnStore.focus,
+.btnStore:focus,
+.btnStore.hover,
+.btnStore:hover,
+.btnStore{
+    background-color: #15b373;
+    border-color: #15b373;
+    color: #fff;
+}
+
+.btnStore[disabled]:active,
+.btnStore.disabled.active,
+.btnStore.disabled:active,
+.btnStore.disabled.focus,
+.btnStore.disabled:focus,
+.btnStore[disabled]:focus,
+.btnStore.disabled.hover,
+.btnStore.disabled:hover,
+.btnStore[disabled]:hover,
+.btnStore.disabled,
+.btnStore[disabled]{
+    background-color: #72ba9c;
+    border-color: #72ba9c;
+}
+
+.floatingAlert {
+    width: 90%;
+    position: fixed;
+    display: block;
+    bottom: 0;
+    top: auto;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+
+.tab-content,
+.fancyStoreBox{
+    background-color: #fff;
+    box-shadow: 4px 4px 4px #e4e4e4;
+    border: 1px solid #ddd;
+}
+
+.tab-content{
+    border-top: none;
+}
+
+@media (min-width: 992px) {
+	.wrapper-center{
+        width: 960px;
+    }
+
+    .form-login {
+		margin-top: 120px;
+        max-width: none;
+        margin-left: 0;
+        margin-right: 0;
+	}
+
+    .floatingAlert {
+        width: auto;
+        top: 75px;
+        right: 35px;
+        margin: 0;
+        bottom: auto;
+        left: auto;
+    }
+
+    .storeTable{
+        margin-top: 75px;
+    }
+
+    .chart{
+        display: block;
+    }
+}
+
+.table-row            { }
+.table-cell           { display: inline-block; vertical-align: top;  }
+
+.cell100              { width: 100%; }
+
+
+.newsFeederContainer  { width: 90%; height: 0px; max-width: 700px; position: absolute; bottom: 0; background-color: #cecbce; border-radius: 15px 15px 0px 0px; transform: translateX(-50%); left: 50%; }
+.newsFeederContainer .rowHead { background-color: #ff695a; display: table; width: 100%; height: 74px; border-radius: 15px 15px 0px 0px; }
+.newsFeederContainer .rowHead .table-cell { display: table-cell; }
+.newsFeederContainer .rowHead .table-cell .fa-bars::before { font-size: 60px; line-height: 74px; color: #FFF; cursor: pointer; }
+.newsFeederContainer .rowBody { max-height: calc(100% - 74px); overflow-y: auto; overflow-x: visible; }
+
+.newsFeederContainer > .table-row { padding: 0px 60px; box-sizing: border-box; }
+
+.newsFeederContainer .table-cell > ul { width: 100%; list-style: none outside none; margin: 0px; padding: 0px; display: block; margin-top: 45px; }
+.newsFeederContainer .table-cell > ul > li { width: 0px; min-height: 90px; background-color: #FFF; margin-bottom: 7px; padding: 0px 20px; box-sizing: border-box; }
+.newsFeederContainer .table-cell > ul > li > p { width: calc(100% - 64px); display: inline-block; padding-left: 30px; box-sizing: border-box; vertical-align: top; }
+.newsFeederContainer .table-cell > ul > li > p > span { height: 90px; display: flex; align-items: center; }
+.newsFeederContainer .table-cell > ul > li > span { width: 64px; height: 64px; display: inline-block; border-radius: 64px; font-size: 40px; color: #FFF; line-height: 64px; text-align: center; margin: 13px 0px; vertical-align: top; }
+.newsFeederContainer .table-cell > ul > li:nth-child(even) > span { background-color: #c7f04b; }
+.newsFeederContainer .table-cell > ul > li:nth-child(odd) > span { background-color: #2fc3cb; }
+.newsFeederContainer .table-cell > ul > li > ul { width: calc(100% + 40px); border-top: 7px solid #cecbce; list-style: none outside none; margin: 0px -20px; padding: 0px 20px; display: none; }
+.newsFeederContainer .table-cell > ul > li > ul > li { padding: 10px 0px; }
+.newsFeederContainer .table-cell > ul > li > ul > li::after { content: " "; display: block; height: 0; clear: both; }
+.newsFeederContainer .table-cell > ul > li > ul > li img { width: 30%; max-width: 200px; min-width: 100; float: left; margin-right: 10px; }
+
+.newsFeederContainer.loading { background: url("../img/ajax-loader.gif") no-repeat scroll center center #cecbce }
+.newsFeederContainer.animating .rowBody { overflow: hidden; }
+.newsFeederContainer.animatingLine .rowBody { overflow: hidden; }
+.newsFeederContainer.animating .table-cell > ul > li > span,
+.newsFeederContainer.animating .table-cell > ul > li > p > span { display: none; }

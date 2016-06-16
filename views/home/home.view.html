@@ -1,0 +1,24 @@
+<div id="NewsFeederContainer" class="newsFeederContainer">
+  <div class="table-row rowHead">
+    <div class="table-cell buttonActionCont">
+      <a ng-click="vm.getAllNewsFeeds();"><i class="fa fa-bars"></i></a>
+    </div>
+    <div class="table-cell customActionCont">
+    </div>
+  </div>
+  <div class="table-row rowBody">
+    <div class="table-cell cell100">
+      <ul>
+          <li ng-repeat="news in vm.allNews">
+                <span>{{vm.getCapitalLetter(news.title)}}</span><p><span><label>{{news.title}}</label></span></p>
+                <ul>
+                    <li>
+                      <img src="{{news.image}}" alt="{{news.title}}"/>
+                      <p>{{news.content}}</p>
+                    </li>
+                </ul>
+          </li>
+      </ul>
+    </div>
+  </div>
+</div>
