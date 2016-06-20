@@ -13,7 +13,9 @@ Y en el archivo **NewService.js** cambiar:
 
 `/URL/to/server/news/service`
 
-Por la URL del servidor deseado, el formato esperado en respuesta del servidor es un JSON con la estructura:
+Por la URL del servidor deseado. 
+
+El formato esperado en respuesta del servidor es un JSON con la estructura:
 
 `
 [
