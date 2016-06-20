@@ -10,7 +10,7 @@
     <div class="table-cell cell100">
       <ul>
           <li ng-repeat="news in vm.allNews">
-                <span>{{vm.getCapitalLetter(news.title)}}</span><p><span><label>{{news.title}}</label></span></p>
+                <span title="{{news.title}}">{{vm.getCapitalLetter(news.title)}}</span><p><span><label>{{news.title}}</label></span></p>
                 <ul>
                     <li>
                       <img src="{{news.image}}" alt="{{news.title}}"/>
